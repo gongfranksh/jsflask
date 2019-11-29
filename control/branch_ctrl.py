@@ -60,4 +60,4 @@ class Branchlist(Resource):
                 dict_branch['BraSName']=branch['BraSName']
                 dict_branch['bn_dg_warehouseid']=branch['bn_dg_warehouseid']
                 branch_list.append(dict_branch)
-                return return_json_result(200, {'branch_list': branch_list})
+            return return_json_result(200, {'branch_list': branch_list})
