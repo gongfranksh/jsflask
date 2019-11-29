@@ -4,7 +4,7 @@ from flask import Flask
 from flask_restful import Api
 
 from control.branch_ctrl import Branchlist,  BranchItem
-from control.functionmenu_ctrl import FuntionsList
+from control.functionmenu_ctrl import FuntionsList, FuntionsItem
 from tools.exts import logger
 
 
@@ -16,6 +16,7 @@ def create_app():
     api.add_resource(BranchItem, '/branch/<branch_code>')
 
     api.add_resource(FuntionsList, '/functionlist/')
+    api.add_resource(FuntionsItem, '/function/<centid>/<sectionid>')
 
 
     # 加载配置

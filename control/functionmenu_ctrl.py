@@ -4,40 +4,42 @@ import json
 from flask_restful import Resource, reqparse
 from js.Branch import Branch
 from jsdb.jsbranch import get_branch_all, get_branch_by_code
-from jsdb.jssystemfunction import query_branch_section_menu
+from jsdb.jssystemfunction import query_branch_section_menu, query_branch_function_menu
 from tools.Utils import return_json_result
-from tools.config import rt_ok
+from tools.config import rt_ok, rt_error_01
 
 
-def abort_if_todo_doesnt_exist(branch_code):
-    pass
+def abort_if_todo_doesnt_exist(code):
+    return return_json_result(rt_error_01, {"msg":"参数为空"})
+
 
 
 #入参届解释器
 parser = reqparse.RequestParser()
 
 
-class Funtions(Resource):
+class FuntionsItem(Resource):
     def __init__(self):
         pass
 
-    def get(self,branch_code):
-        abort_if_todo_doesnt_exist(branch_code)
+    def get(self,centid,sectionid):
+        abort_if_todo_doesnt_exist(centid)
+        abort_if_todo_doesnt_exist(sectionid)
         # branch = Branch('01001')
         # res=branch.get_branch_by_code(branch_code)
-        res=get_branch_by_code(branch_code)
+        res=query_branch_function_menu(centid,sectionid)
         if len(res)==0:
             return return_json_result(rt_ok, {})
         else:
-            branch_list=[]
-            for branch in res:
-                dict_branch={}
-                dict_branch['BraId']=branch['BraId']
-                dict_branch['BraName']=branch['BraName']
-                dict_branch['BraSName']=branch['BraSName']
-                dict_branch['bn_dg_warehouseid']=branch['bn_dg_warehouseid']
-                branch_list.append(dict_branch)
-            return return_json_result(rt_ok, {})
+            function_list=[]
+            for fun in res:
+                dict_function={}
+                dict_function['functionid']=fun['functionid']
+                dict_function['functionname']=fun['functionname']
+                dict_function['iconname']=fun['iconname']
+                dict_function['methodname']=fun['methodname']
+                function_list.append(dict_function)
+            return return_json_result(rt_ok, {"menu_list":function_list})
 
 
 
