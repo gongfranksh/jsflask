@@ -8,8 +8,8 @@ js_db = "headquarters"
 
 
 rt_ok=200
-
 rt_error_01=401
+
 #正式环境
 # js_host = "192.168.72.5"
 # # js_user = "syzy"
