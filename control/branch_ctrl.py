@@ -4,6 +4,7 @@ import json
 from flask_restful import Resource, reqparse
 from js.Branch import Branch
 from jsdb.jsbranch import get_branch_all, get_branch_by_code
+from tools.Utils import return_json_result
 
 
 def abort_if_todo_doesnt_exist(branch_code):
@@ -24,17 +25,19 @@ class BranchItem(Resource):
         # res=branch.get_branch_by_code(branch_code)
         res=get_branch_by_code(branch_code)
         if len(res)==0:
-            return {}
+
+            return return_json_result(200,{})
         else:
             branch_list=[]
             for branch in res:
                 dict_branch={}
                 dict_branch['BraId']=branch['BraId']
-                dict_branch['BraName']=branch['BraName']
-                dict_branch['BraSName']=branch['BraSName']
+                dict_branch['BraName']=branch['BraName'].encode('latin1').decode('gbk')
+                dict_branch['BraSName']=branch['BraSName'].encode('latin1').decode('gbk')
                 dict_branch['bn_dg_warehouseid']=branch['bn_dg_warehouseid']
                 branch_list.append(dict_branch)
-            return {'branch_list':branch_list},200
+            return return_json_result(200, {'branch_list':branch_list})
+            # return ,200
 
 
 class Branchlist(Resource):
@@ -51,8 +54,10 @@ class Branchlist(Resource):
             for branch in res:
                 dict_branch={}
                 dict_branch['BraId']=branch['BraId']
+                # dict_branch['BraName']=branch['BraName'].encode('latin-1').decode('gbk')
+                # dict_branch['BraSName']=branch['BraSName'].encode('latin-1').decode('gbk')
                 dict_branch['BraName']=branch['BraName']
                 dict_branch['BraSName']=branch['BraSName']
                 dict_branch['bn_dg_warehouseid']=branch['bn_dg_warehouseid']
                 branch_list.append(dict_branch)
-            return {'branch_list':branch_list},200
+                return return_json_result(200, {'branch_list': branch_list})
