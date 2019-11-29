@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-import json
-
 from flask_restful import Resource, reqparse
-from js.Branch import Branch
-from jsdb.jsbranch import get_branch_all, get_branch_by_code
 from jsdb.jssystemfunction import query_branch_section_menu, query_branch_function_menu
 from tools.Utils import return_json_result
 from tools.config import rt_ok, rt_error_01
@@ -25,8 +21,6 @@ class FuntionsItem(Resource):
     def get(self,centid,sectionid):
         abort_if_todo_doesnt_exist(centid)
         abort_if_todo_doesnt_exist(sectionid)
-        # branch = Branch('01001')
-        # res=branch.get_branch_by_code(branch_code)
         res=query_branch_function_menu(centid,sectionid)
         if len(res)==0:
             return return_json_result(rt_ok, {})
