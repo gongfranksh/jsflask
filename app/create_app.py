@@ -3,7 +3,7 @@ from flask import Flask
 # from config import CONFIG
 from flask_restful import Api
 
-from control.branch_ctrl import Branchlist
+from control.branch_ctrl import Branchlist,  BranchItem
 from tools.exts import logger
 
 
@@ -12,6 +12,8 @@ def create_app():
     api = Api(app)
 
     api.add_resource(Branchlist, '/branch/')
+    api.add_resource(BranchItem, '/branch/<branch_code>')
+
     # 加载配置
     # app.config.from_object(CONFIG)
 
