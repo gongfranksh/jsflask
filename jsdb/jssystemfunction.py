@@ -12,6 +12,12 @@ def query_branch_section_menu():
     return rst
 
 def query_branch_function_menu(centid,sectionid):
+            # 0    1    POS
+            # 2    2    商品管理
+            # 2    4    价格管理
+            # 2    5    促销管理
+
+
         sql = """
             SELECT CAST (id*1000+id_child*100+id_child_child AS INT) AS functionid
             ,menutext AS functionname  
