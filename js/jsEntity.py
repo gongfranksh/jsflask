@@ -9,18 +9,16 @@ from tools.Utils import MsSqlResultDataEncoder
 
 # reload(sys)
 # sys.setdefaultencoding("utf-8")
-
-
-
+from tools.config import js_host, js_user, js_pwd, js_db
 
 
 class JsEntity(object):
 
     def __CONNECT_INFO(self):
-        self.js_host = "192.168.72.5"
-        self.js_user = "syzy"
-        self.js_pwd = "7fad69fa0c"
-        self.js_db = "headquarters"
+        self.js_host = js_host
+        self.js_user = js_user
+        self.js_pwd = js_pwd
+        self.js_db =js_db
 
 
     def __init__(self, table,branchcode):
