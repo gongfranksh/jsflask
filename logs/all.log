@@ -1,0 +1,419 @@
+2019-11-29 13:31:32,438 - H:/apps/jsflask/tools/jsflasklog.py[line:42] - INFO: [测试log] hello, world
+2019-11-29 13:47:55,577 [19284:MainThread] [_internal.py:_internal:_log] [INFO]:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-11-29 13:49:39,553 [13424:MainThread] [_internal.py:_internal:_log] [INFO]:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-11-29 13:50:20,951 [13800:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 13:50:22,698 [3408:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 13:50:22,738 [3408:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 13:50:22,789 [17628:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://192.168.81.148:5000/ (Press CTRL+C to quit)
+2019-11-29 13:50:26,204 [14372:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 13:50:26] "GET / HTTP/1.1" 404 -
+2019-11-29 13:52:18,906 [18956:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 13:52:38,222 [7400:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 13:52:38,260 [7400:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 13:52:38,323 [2888:Thread-30] [_internal.py:_internal:_log] [INFO]:  * Running on http://192.168.81.148:5000/ (Press CTRL+C to quit)
+2019-11-29 13:52:54,866 [15548:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 13:52:57,882 [11708:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 13:52:57,936 [11708:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 13:52:58,010 [14764:Thread-6] [_internal.py:_internal:_log] [INFO]:  * Running on http://192.168.81.148:5000/ (Press CTRL+C to quit)
+2019-11-29 13:52:59,033 [12128:Thread-7] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 13:52:59] "GET / HTTP/1.1" 404 -
+2019-11-29 13:53:03,642 [19452:Thread-8] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 13:53:03] "GET / HTTP/1.1" 404 -
+2019-11-29 13:53:29,444 [18212:Thread-11] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 13:53:29] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 13:53:34,580 [17464:Thread-10] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 13:53:34] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 14:02:19,394 [18012:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 14:02:21,237 [16680:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 14:02:21,285 [16680:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 14:02:21,346 [16884:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://192.168.81.148:5000/ (Press CTRL+C to quit)
+2019-11-29 14:02:29,042 [16496:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:02:29] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 14:02:33,953 [18832:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:02:33] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 14:03:45,960 [14764:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 14:03:48,223 [11300:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 14:03:48,279 [11300:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 14:03:48,351 [18616:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://192.168.81.148:5000/ (Press CTRL+C to quit)
+2019-11-29 14:04:00,979 [17916:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:04:00] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 14:15:18,687 [18616:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 14:15:21,248 [11592:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 14:15:21,309 [11592:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 14:15:21,446 [17752:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 14:15:27,508 [18684:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:15:27] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 14:38:14,841 [11592:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\branch_ctrl.py', reloading
+2019-11-29 14:38:14,885 [18616:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 14:53:45,807 [12744:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 14:53:47,286 [19392:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 14:53:47,323 [19392:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 14:53:47,384 [19736:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 14:53:53,363 [19348:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:53:53] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 14:53:57,673 [18472:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:53:57] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 14:53:57,845 [19520:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:53:57] "GET /favicon.ico HTTP/1.1" 404 -
+2019-11-29 14:54:02,449 [220:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:54:02] "GET /branch/01002 HTTP/1.1" 200 -
+2019-11-29 14:54:07,092 [15216:Thread-6] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:54:07] "GET /branch/01004 HTTP/1.1" 200 -
+2019-11-29 14:54:15,989 [20252:Thread-7] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:54:15] "GET /branch/d HTTP/1.1" 200 -
+2019-11-29 14:54:33,121 [19568:Thread-10] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:54:33] "GET /branch/0100 HTTP/1.1" 200 -
+2019-11-29 14:54:36,463 [15988:Thread-9] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:54:36] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 14:55:11,889 [19392:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\branch_ctrl.py', reloading
+2019-11-29 14:55:11,941 [12744:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 14:55:14,331 [15216:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 14:55:14,384 [15216:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 14:55:14,465 [18452:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 14:55:25,708 [15216:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\branch_ctrl.py', reloading
+2019-11-29 14:55:25,753 [12744:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 14:55:27,908 [15440:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 14:55:27,957 [15440:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 14:55:28,039 [18020:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 14:55:41,715 [15440:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\js\\Branch.py', reloading
+2019-11-29 14:55:41,763 [12744:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 14:55:44,029 [3600:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 14:55:44,083 [3600:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 14:55:44,166 [15488:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 14:58:02,498 [15108:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 14:58:04,292 [13740:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 14:58:04,335 [13740:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 14:58:04,402 [14344:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 14:58:07,499 [19560:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:58:07] "GET /branch/01002 HTTP/1.1" 200 -
+2019-11-29 14:58:14,284 [18652:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:58:14] "GET /branch/01005 HTTP/1.1" 200 -
+2019-11-29 14:58:29,896 [18528:Thread-6] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 14:58:29] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 15:41:26,469 [16100:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 15:41:29,093 [17048:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 15:41:29,168 [17048:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 15:41:29,211 [13688:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 15:41:31,783 [21148:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:31] "GET /branch/ HTTP/1.1" 500 -
+2019-11-29 15:41:31,831 [20940:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:31] "GET /branch/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-11-29 15:41:31,838 [18132:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:31] "GET /branch/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-11-29 15:41:31,852 [16576:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:31] "GET /branch/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-11-29 15:41:32,116 [21048:Thread-6] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:32] "GET /branch/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-11-29 15:41:32,179 [12244:Thread-7] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:32] "GET /branch/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 15:41:32,221 [13732:Thread-8] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:32] "GET /branch/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 15:41:45,451 [5336:Thread-10] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:45] "GET /branch/ HTTP/1.1" 500 -
+2019-11-29 15:41:45,472 [14424:Thread-9] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:45] "GET /branch/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-11-29 15:41:45,483 [20188:Thread-11] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:45] "GET /branch/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-11-29 15:41:45,484 [17520:Thread-12] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:45] "GET /branch/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-11-29 15:41:45,563 [20572:Thread-13] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:45] "GET /branch/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-11-29 15:41:45,799 [17080:Thread-14] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:41:45] "GET /branch/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 15:41:53,535 [20568:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 15:41:57,642 [14776:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 15:41:57,707 [14776:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 15:41:57,755 [3132:Thread-6] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 15:42:41,144 [20944:Thread-7] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:42:41] "GET /branch/ HTTP/1.1" 500 -
+2019-11-29 15:42:41,179 [21192:Thread-8] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:42:41] "GET /branch/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-11-29 15:42:41,198 [17356:Thread-9] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:42:41] "GET /branch/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-11-29 15:42:41,204 [20352:Thread-10] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:42:41] "GET /branch/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-11-29 15:42:41,294 [21140:Thread-11] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:42:41] "GET /branch/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-11-29 15:42:41,319 [20080:Thread-12] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:42:41] "GET /branch/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 15:42:41,415 [21172:Thread-13] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:42:41] "GET /branch/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 15:45:53,296 [15600:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 15:45:56,990 [21132:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 15:45:57,059 [21132:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 15:45:57,112 [21456:Thread-6] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 15:46:02,352 [15768:Thread-7] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:46:02] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 15:50:11,225 [10028:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 15:50:14,326 [18616:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 15:50:14,401 [18616:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 15:50:14,444 [12620:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 15:50:15,721 [15520:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:50:15] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 15:50:27,203 [19152:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:50:27] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 15:52:54,677 [16640:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 15:52:57,365 [20824:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 15:52:57,431 [20824:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 15:52:57,466 [14992:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 15:53:02,827 [14804:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:53:02] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 15:53:07,035 [21072:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 15:53:07] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 16:05:40,627 [17836:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:05:44,152 [21192:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:05:44,221 [21192:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:05:44,246 [20500:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:05:46,713 [14588:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:05:46] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 16:06:04,903 [21192:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\branch_ctrl.py', reloading
+2019-11-29 16:06:04,981 [17836:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:06:08,326 [15520:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:06:08,374 [15520:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:06:08,401 [16204:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:06:30,466 [15520:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\branch_ctrl.py', reloading
+2019-11-29 16:06:30,508 [17836:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:06:35,891 [21192:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:06:39,035 [4384:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:06:39,106 [4384:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:06:39,147 [14804:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:06:41,695 [20820:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:06:41] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:07:11,027 [18868:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:07:13,829 [20588:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:07:13,891 [20588:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:07:13,927 [20528:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:07:16,818 [3920:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:07:16] "GET /branch/ HTTP/1.1" 500 -
+2019-11-29 16:07:16,844 [19800:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:07:16] "GET /branch/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-11-29 16:07:16,856 [19056:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:07:16] "GET /branch/?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-11-29 16:07:16,869 [17064:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:07:16] "GET /branch/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-11-29 16:07:17,467 [20568:Thread-6] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:07:17] "GET /branch/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 16:07:17,517 [20168:Thread-7] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:07:17] "GET /branch/?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-11-29 16:07:17,607 [17304:Thread-8] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:07:17] "GET /branch/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 16:07:58,117 [20588:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\branch_ctrl.py', reloading
+2019-11-29 16:07:58,209 [18868:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:08:03,700 [19108:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:08:07,881 [20528:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:08:08,008 [20528:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:08:08,072 [12812:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:08:23,648 [20648:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:08:23] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:08:49,152 [20528:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\branch_ctrl.py', reloading
+2019-11-29 16:08:49,248 [19108:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:08:54,729 [21064:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:08:57,933 [6688:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:08:58,008 [6688:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:08:58,061 [21476:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:08:58,585 [19108:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:08:58] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:09:27,951 [19840:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:09:27] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 16:11:17,765 [12512:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:11:20,635 [8736:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:11:20,714 [8736:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:11:20,762 [13740:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:11:23,220 [21364:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:11:23] "GET /branch/01001 HTTP/1.1" 500 -
+2019-11-29 16:11:23,243 [4384:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:11:23] "GET /branch/01001?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-11-29 16:11:23,266 [14924:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:11:23] "GET /branch/01001?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-11-29 16:11:23,267 [20560:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:11:23] "GET /branch/01001?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-11-29 16:11:23,822 [18284:Thread-6] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:11:23] "GET /branch/01001?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-11-29 16:11:23,886 [20052:Thread-7] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:11:23] "GET /branch/01001?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 16:11:23,943 [20920:Thread-8] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:11:23] "GET /branch/01001?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 16:11:50,823 [8736:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\branch_ctrl.py', reloading
+2019-11-29 16:11:51,106 [12512:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:11:58,248 [19824:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:12:04,256 [17248:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:12:04,315 [17248:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:12:04,362 [15912:Thread-6] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:12:07,815 [14992:Thread-8] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:12:07] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 16:14:32,875 [17248:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\branch_ctrl.py', reloading
+2019-11-29 16:14:32,993 [19824:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:14:39,933 [4928:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:14:44,634 [19848:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:14:44,702 [19848:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:14:44,754 [16640:Thread-6] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:14:49,338 [6648:Thread-8] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:14:49] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 16:20:34,489 [19848:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\tools\\Utils.py', reloading
+2019-11-29 16:20:34,626 [4928:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:20:41,256 [21348:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:20:41,420 [21348:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:20:41,538 [21300:Thread-6] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:21:58,271 [20140:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:22:02,324 [18268:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:22:02,409 [18268:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:22:02,456 [3924:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:22:03,503 [13932:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:22:03] "GET /branch/01001 HTTP/1.1" 500 -
+2019-11-29 16:22:03,524 [21236:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:22:03] "GET /branch/01001?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-11-29 16:22:03,530 [12812:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:22:03] "GET /branch/01001?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-11-29 16:22:03,531 [3536:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:22:03] "GET /branch/01001?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-11-29 16:22:04,037 [15896:Thread-6] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:22:04] "GET /branch/01001?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-11-29 16:22:04,135 [15372:Thread-7] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:22:04] "GET /branch/01001?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 16:22:04,191 [16176:Thread-8] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:22:04] "GET /branch/01001?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 16:22:34,298 [21128:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:22:38,067 [21300:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:22:38,203 [21300:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:22:38,330 [17084:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:22:39,071 [7788:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:22:39] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 16:22:50,269 [20476:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:22:50] "GET /branch/01002 HTTP/1.1" 200 -
+2019-11-29 16:22:54,247 [13836:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:22:54] "GET /branch/01007 HTTP/1.1" 200 -
+2019-11-29 16:23:03,189 [21348:Thread-6] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:23:03] "GET /branchlist HTTP/1.1" 404 -
+2019-11-29 16:23:52,410 [21080:Thread-9] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:23:52] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:24:09,951 [21300:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\branch_ctrl.py', reloading
+2019-11-29 16:24:10,023 [21128:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:24:14,334 [16640:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:24:17,402 [20648:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:24:17,473 [20648:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:24:17,512 [16176:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:24:19,292 [19800:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:24:19] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:25:07,059 [8736:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:25:07] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:25:09,446 [16636:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:25:09] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:25:49,256 [20748:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:25:52,271 [17084:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:25:52,329 [17084:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:25:52,366 [21040:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:25:55,942 [16176:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:25:55] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:26:03,334 [7620:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:26:03] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:26:11,443 [2456:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:26:11] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:26:31,969 [17084:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\branch_ctrl.py', reloading
+2019-11-29 16:26:32,049 [20748:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:26:38,162 [20756:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:26:41,651 [20596:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:26:41,728 [20596:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:26:41,771 [21228:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:26:41,816 [20700:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:26:41] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:31:43,050 [21832:Thread-6] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:31:43] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:31:44,956 [21812:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:31:44] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:38:06,810 [20596:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\app\\create_app.py', reloading
+2019-11-29 16:38:06,859 [20756:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:39:39,495 [12448:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:39:43,040 [21856:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:39:43,106 [21856:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:39:43,131 [19952:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:39:49,393 [13788:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:39:49] "GET /functionlist HTTP/1.1" 308 -
+2019-11-29 16:39:49,694 [2456:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:39:49] "GET /functionlist/ HTTP/1.1" 200 -
+2019-11-29 16:41:07,612 [21696:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:41:07] "GET /functionlist/ HTTP/1.1" 200 -
+2019-11-29 16:41:15,099 [21956:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:41:18,837 [21244:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:41:18,903 [21244:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:41:18,952 [20572:Thread-6] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:42:14,348 [22184:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:42:17,666 [17984:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:42:17,746 [17984:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:42:17,786 [21788:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:42:17,944 [5344:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:42:17] "GET /functionlist/ HTTP/1.1" 200 -
+2019-11-29 16:42:44,641 [17984:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\functionmenu_ctrl.py', reloading
+2019-11-29 16:42:44,761 [22184:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:42:53,435 [20616:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:42:57,833 [18104:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:42:57,936 [18104:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:42:58,017 [21996:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:43:00,554 [18104:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\functionmenu_ctrl.py', reloading
+2019-11-29 16:43:00,635 [20616:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:43:04,221 [20240:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:43:04,292 [20240:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:43:04,331 [22088:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:43:07,899 [18640:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:43:07] "GET /functionlist/ HTTP/1.1" 200 -
+2019-11-29 16:43:57,802 [21096:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:44:00,993 [21368:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:44:01,032 [21368:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:44:01,057 [21928:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:45:54,637 [21368:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\branch_ctrl.py', reloading
+2019-11-29 16:45:54,716 [21096:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:45:57,882 [21748:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:45:57,982 [21748:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:46:02,413 [19580:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:46:05,201 [20512:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:46:05,272 [20512:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:46:05,308 [19080:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:46:07,520 [1420:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:46:07] "GET /functionlist/ HTTP/1.1" 200 -
+2019-11-29 16:46:10,964 [21992:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:46:10] "GET /functionlist/ HTTP/1.1" 200 -
+2019-11-29 16:46:14,683 [21612:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:46:14] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:46:26,003 [20512:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\tools\\config.py', reloading
+2019-11-29 16:46:26,099 [19580:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:47:04,345 [21980:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:47:07,135 [21716:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:47:07,185 [21716:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:47:07,220 [21692:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:47:08,551 [21868:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:47:08] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:47:15,009 [21364:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:47:15] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 16:47:39,107 [21716:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\tools\\config.py', reloading
+2019-11-29 16:47:39,177 [21980:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:47:43,434 [20504:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:47:43,519 [20504:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:47:43,565 [22380:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:47:46,294 [20504:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\tools\\config.py', reloading
+2019-11-29 16:47:46,637 [21980:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:47:50,892 [21280:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:47:51,006 [21280:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:47:51,063 [16340:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:48:01,482 [21280:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\tools\\config.py', reloading
+2019-11-29 16:48:01,547 [21980:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:48:05,372 [17900:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:48:05,455 [17900:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:48:05,503 [19604:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:48:43,169 [22244:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:48:43] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 16:48:45,099 [19340:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:48:45] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 16:48:49,773 [20908:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:48:49] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 16:50:19,857 [17900:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\app\\create_app.py', reloading
+2019-11-29 16:50:19,917 [21980:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:56:41,303 [19388:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:56:43,722 [3204:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:56:43,779 [3204:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:56:43,812 [1420:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:57:03,001 [22400:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:57:03] "GET /function HTTP/1.1" 404 -
+2019-11-29 16:57:08,339 [22252:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:57:08] "GET /function/0/1 HTTP/1.1" 200 -
+2019-11-29 16:57:50,588 [3204:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\functionmenu_ctrl.py', reloading
+2019-11-29 16:57:50,663 [19388:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:57:55,201 [21620:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:57:58,041 [16340:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:57:58,106 [16340:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:57:58,141 [21108:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:58:00,274 [21816:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:58:00] "GET /function/0/1 HTTP/1.1" 500 -
+2019-11-29 16:58:00,331 [21984:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:58:00] "GET /function/0/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-11-29 16:58:00,360 [21768:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:58:00] "GET /function/0/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-11-29 16:58:00,373 [8840:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:58:00] "GET /function/0/1?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-11-29 16:58:00,730 [22216:Thread-6] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:58:00] "GET /function/0/1?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-11-29 16:58:00,824 [13276:Thread-7] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:58:00] "GET /function/0/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 16:58:00,880 [19340:Thread-8] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:58:00] "GET /function/0/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 16:58:31,927 [16340:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\functionmenu_ctrl.py', reloading
+2019-11-29 16:58:31,997 [21620:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:58:37,240 [22344:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:58:40,392 [19960:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:58:40,461 [19960:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:58:40,505 [13592:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 16:58:41,146 [22364:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:58:41] "GET /function/0/1 HTTP/1.1" 200 -
+2019-11-29 16:58:45,785 [22380:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 16:58:45] "GET /function/0/1 HTTP/1.1" 200 -
+2019-11-29 16:59:41,538 [19960:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\functionmenu_ctrl.py', reloading
+2019-11-29 16:59:41,619 [22344:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 16:59:44,780 [5380:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 16:59:44,865 [5380:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 16:59:44,904 [20748:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 17:00:08,444 [5380:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\tools\\config.py', reloading
+2019-11-29 17:00:08,524 [22344:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 17:00:11,699 [14956:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 17:00:11,787 [14956:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 17:00:11,830 [16616:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 17:00:48,881 [14956:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\functionmenu_ctrl.py', reloading
+2019-11-29 17:00:48,961 [22344:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 17:00:52,291 [11456:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 17:00:52,365 [11456:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 17:00:52,405 [15728:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 17:00:56,446 [11456:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\functionmenu_ctrl.py', reloading
+2019-11-29 17:00:56,535 [22344:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 17:01:01,065 [15508:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 17:01:04,315 [22304:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 17:01:04,386 [22304:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 17:01:04,435 [13744:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 17:01:08,237 [3976:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:01:08] "GET /function//1 HTTP/1.1" 404 -
+2019-11-29 17:01:20,903 [2436:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:01:20] "GET /function// HTTP/1.1" 404 -
+2019-11-29 17:03:02,185 [18400:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 17:03:04,855 [21228:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 17:03:04,899 [21228:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 17:03:04,935 [3080:Thread-6] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 17:03:09,141 [22388:Thread-8] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:03:09] "GET /function/4/ HTTP/1.1" 404 -
+2019-11-29 17:07:19,679 [16636:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 17:07:21,612 [5880:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 17:07:21,661 [5880:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 17:07:21,700 [8404:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 17:07:36,086 [13940:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:07:36] "GET /function/4/1 HTTP/1.1" 200 -
+2019-11-29 17:08:30,623 [19852:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:08:30] "GET /function/0/1 HTTP/1.1" 200 -
+2019-11-29 17:14:25,591 [10140:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 17:14:28,237 [21016:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 17:14:28,296 [21016:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 17:14:28,332 [21780:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 17:15:08,905 [18528:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:15:08] "GET /function/0/1 HTTP/1.1" 200 -
+2019-11-29 17:15:13,033 [21604:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:15:13] "GET /function/0/2 HTTP/1.1" 200 -
+2019-11-29 17:15:17,807 [17184:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:15:17] "GET /function/0/1 HTTP/1.1" 200 -
+2019-11-29 17:17:02,095 [19448:Thread-6] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:17:02] "GET /function/0/1 HTTP/1.1" 200 -
+2019-11-29 17:17:38,038 [2772:Thread-8] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:17:38] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 17:17:41,955 [22168:Thread-9] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:17:41] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 17:19:09,114 [21016:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\functionmenu_ctrl.py', reloading
+2019-11-29 17:19:09,161 [10140:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 17:19:11,813 [22048:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 17:19:11,866 [22048:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 17:19:11,899 [20788:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 17:23:13,316 [22492:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 17:23:27,116 [15052:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 17:23:27,198 [15052:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 17:23:27,270 [21912:Thread-10] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 17:23:36,079 [22212:Thread-12] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:23:36] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 17:24:20,942 [16596:Thread-14] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:24:20] "GET /function/%3Ccentid%3E/%3Csectionid%3E HTTP/1.1" 500 -
+2019-11-29 17:24:21,002 [21604:Thread-13] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:24:21] "GET /function/%3Ccentid%3E/%3Csectionid%3E?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-11-29 17:24:21,029 [10292:Thread-16] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:24:21] "GET /function/%3Ccentid%3E/%3Csectionid%3E?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-11-29 17:24:21,040 [7296:Thread-15] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:24:21] "GET /function/%3Ccentid%3E/%3Csectionid%3E?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-11-29 17:24:21,410 [10284:Thread-17] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:24:21] "GET /function/%3Ccentid%3E/%3Csectionid%3E?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-11-29 17:24:21,492 [19876:Thread-18] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:24:21] "GET /function/%3Ccentid%3E/%3Csectionid%3E?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 17:24:21,568 [6744:Thread-19] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:24:21] "GET /function/%3Ccentid%3E/%3Csectionid%3E?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-11-29 17:24:35,839 [18400:Thread-21] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:24:35] "GET /function// HTTP/1.1" 404 -
+2019-11-29 17:24:43,406 [17712:Thread-20] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:24:43] "GET /function/0/1 HTTP/1.1" 200 -
+2019-11-29 17:30:41,883 [15052:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\control\\functionmenu_ctrl.py', reloading
+2019-11-29 17:30:41,956 [22492:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-11-29 17:30:46,550 [11052:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-11-29 17:30:46,616 [11052:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-11-29 17:30:46,672 [13744:Thread-6] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-11-29 17:31:48,157 [23028:Thread-8] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:31:48] "GET /functionlist/ HTTP/1.1" 200 -
+2019-11-29 17:32:04,817 [22832:Thread-9] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:32:04] "GET /function/2/2 HTTP/1.1" 200 -
+2019-11-29 17:59:04,326 [18068:Thread-12] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:59:04] "GET /branch/ HTTP/1.1" 200 -
+2019-11-29 17:59:04,500 [23236:Thread-11] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:59:04] "GET /favicon.ico HTTP/1.1" 404 -
+2019-11-29 17:59:56,802 [19116:Thread-13] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 17:59:56] "GET /branch/99 HTTP/1.1" 200 -
+2019-11-29 18:00:04,579 [20264:Thread-14] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 18:00:04] "GET /branch/01001 HTTP/1.1" 200 -
+2019-11-29 18:00:15,040 [18460:Thread-16] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [29/Nov/2019 18:00:15] "GET /branch/01002 HTTP/1.1" 200 -
+2019-12-02 08:32:05,155 [22280:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-12-02 08:32:06,641 [23280:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-12-02 08:32:06,671 [23280:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-12-02 08:32:06,693 [9780:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2019-12-02 08:34:03,807 [4608:Thread-3] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [02/Dec/2019 08:34:03] "GET /branch/ HTTP/1.1" 200 -
+2019-12-02 08:34:03,937 [10376:Thread-2] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [02/Dec/2019 08:34:03] "GET /favicon.ico HTTP/1.1" 404 -
+2019-12-02 08:35:05,949 [7252:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [02/Dec/2019 08:35:05] "GET /functionlist/ HTTP/1.1" 200 -
+2019-12-02 08:35:13,126 [12480:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [02/Dec/2019 08:35:13] "GET /functionlist/0/1 HTTP/1.1" 404 -
+2019-12-02 08:35:23,008 [18600:Thread-6] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [02/Dec/2019 08:35:23] "GET /function/0/1 HTTP/1.1" 200 -
