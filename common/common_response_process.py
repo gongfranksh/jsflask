@@ -8,10 +8,11 @@
 @csdn https://blog.csdn.net/qq_33196814
 @file_description：
 """
+import json
 
 from flask import jsonify, Response
 
-
+from tools.Utils import MsSqlResultDataEncoder
 from utils.xml_json_process import json_to_xml
 
 
@@ -21,7 +22,15 @@ def response_json(data):
     :param data: json数据
     :return:
     """
-    return jsonify(data)
+    tt001=json.dumps(data, cls=MsSqlResultDataEncoder,ensure_ascii=False)
+
+    data_str=json.loads(tt001)
+    ret=jsonify(data_str)
+
+
+    # return  json.dumps(data, cls=MsSqlResultDataEncoder)
+    return  ret
+        # json.dumps(data, cls=MsSqlResultDataEncoder)
 
 def response_xml(data,root=None):
     """

@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
-
+#coding=utf8
+import sys
 import time
 import pymssql
 import threading
+
 from DBUtils.PooledDB import PooledDB, SharedDBConnection
 
 from tools.config import js_host, js_user, js_pwd, js_db
+
+
 
 POOL = PooledDB(
     creator=pymssql,  # 使用链接数据库的模块
@@ -22,7 +26,10 @@ POOL = PooledDB(
     user=js_user,
     password=js_pwd,
     database=js_db,
-    charset='utf8'
+    # charset='utf8'
+    # mssql设置utf8为出现乱码
+
+    charset='GBK'
 )
 
 
@@ -32,4 +39,10 @@ def result_by_query(sql):
     cursor.execute(sql)
     res=cursor.fetchall()
     conn.close()
+    print(res)
     return res
+
+
+# pp=result_by_query("select CONVERT(nvarchar(20),braname) braname from branch")
+# print("中文")
+# print(pp)

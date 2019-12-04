@@ -10,6 +10,7 @@
 """
 from flask_restful import Api
 
+from api.branch.interface_branch import Branchlist
 from api.department.interface_department import interfaceDepartment
 from api.department.interface_department_staff import interfaceDepartmentStaff
 from api.login.interface_login import interfaceLogin
@@ -97,4 +98,11 @@ api.add_resource(
 api.add_resource(
     interfaceLogin,
     '/li-boss/<version>/login'
+)
+
+
+# 获取门店清单
+api.add_resource(
+    Branchlist,
+    '/li-boss/<version>/branch'
 )

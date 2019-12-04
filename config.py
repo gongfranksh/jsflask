@@ -22,8 +22,8 @@ class Configuration():
     读取数据库配置文件中的的用户信息,密码信息，主机信息，端口信息,数据库名称信息
     config_path: 是配置文件的路径
     """
-    COPYRIGHT = '版权所有 ©2018-2019 成都原子数据科技有限公司.'
-    EMAIL = 'surport@atomdatatech.com'
+    COPYRIGHT = 'gongweilinag copy right.'
+    EMAIL = 'gongfranksh@qq.com'
 
     def __init__(self, config_file_path='./config.ini'):
         try:
