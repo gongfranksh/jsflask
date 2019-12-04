@@ -417,3 +417,34 @@
 2019-12-02 08:35:05,949 [7252:Thread-4] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [02/Dec/2019 08:35:05] "GET /functionlist/ HTTP/1.1" 200 -
 2019-12-02 08:35:13,126 [12480:Thread-5] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [02/Dec/2019 08:35:13] "GET /functionlist/0/1 HTTP/1.1" 404 -
 2019-12-02 08:35:23,008 [18600:Thread-6] [_internal.py:_internal:_log] [INFO]: 192.168.81.148 - - [02/Dec/2019 08:35:23] "GET /function/0/1 HTTP/1.1" 200 -
+2019-12-04 14:59:46,577 [17116:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-12-04 14:59:48,447 [10192:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-12-04 14:59:48,485 [10192:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-12-04 14:59:48,509 [20664:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:8099/ (Press CTRL+C to quit)
+2019-12-04 14:59:53,017 [11964:Thread-2] [_internal.py:_internal:_log] [INFO]: 127.0.0.1 - - [04/Dec/2019 14:59:53] "GET /li-boss/v1/branch HTTP/1.1" 200 -
+2019-12-04 15:00:57,645 [7092:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-12-04 15:01:00,596 [12456:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-12-04 15:01:00,651 [12456:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-12-04 15:01:00,682 [6032:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:8099/ (Press CTRL+C to quit)
+2019-12-04 15:01:00,905 [21612:Thread-2] [_internal.py:_internal:_log] [INFO]: 127.0.0.1 - - [04/Dec/2019 15:01:00] "GET /li-boss/v1/branch HTTP/1.1" 200 -
+2019-12-04 15:03:18,809 [1820:Thread-3] [_internal.py:_internal:_log] [INFO]: 127.0.0.1 - - [04/Dec/2019 15:03:18] "POST /li-boss/v1/login HTTP/1.1" 200 -
+2019-12-04 15:05:07,150 [20744:Thread-4] [_internal.py:_internal:_log] [INFO]: 127.0.0.1 - - [04/Dec/2019 15:05:07] "GET /li-boss/v1/branch HTTP/1.1" 200 -
+2019-12-04 15:06:09,044 [3284:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-12-04 15:06:13,250 [23520:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-12-04 15:06:13,313 [23520:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-12-04 15:06:13,364 [18908:Thread-6] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:8099/ (Press CTRL+C to quit)
+2019-12-04 15:06:18,205 [9364:Thread-7] [_internal.py:_internal:_log] [INFO]: 127.0.0.1 - - [04/Dec/2019 15:06:18] "GET /li-boss/v1/branch HTTP/1.1" 200 -
+2019-12-04 15:06:48,749 [456:Thread-8] [_internal.py:_internal:_log] [INFO]: 127.0.0.1 - - [04/Dec/2019 15:06:48] "GET /li-boss/v1/branch HTTP/1.1" 200 -
+2019-12-04 15:08:04,341 [23520:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\api\\branch\\interface_branch.py', reloading
+2019-12-04 15:08:04,424 [3284:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-12-04 15:09:01,946 [22804:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-12-04 15:09:07,552 [11108:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-12-04 15:09:07,624 [11108:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-12-04 15:09:07,678 [3480:Thread-6] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:8099/ (Press CTRL+C to quit)
+2019-12-04 15:09:46,278 [19548:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat
+2019-12-04 15:09:49,575 [23440:MainThread] [_internal.py:_internal:_log] [WARNING]:  * Debugger is active!
+2019-12-04 15:09:49,610 [23440:MainThread] [_internal.py:_internal:_log] [INFO]:  * Debugger PIN: 320-792-657
+2019-12-04 15:09:49,635 [15368:Thread-1] [_internal.py:_internal:_log] [INFO]:  * Running on http://0.0.0.0:8099/ (Press CTRL+C to quit)
+2019-12-04 15:09:54,716 [7772:Thread-2] [_internal.py:_internal:_log] [INFO]: 127.0.0.1 - - [04/Dec/2019 15:09:54] "GET /li-boss/v1/branch HTTP/1.1" 200 -
+2019-12-04 15:15:34,506 [23440:MainThread] [_internal.py:_internal:_log] [INFO]:  * Detected change in 'H:\\apps\\jsflask\\start.py', reloading
+2019-12-04 15:15:34,551 [19548:MainThread] [_internal.py:_internal:_log] [INFO]:  * Restarting with stat

@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 import json
 
-from flask import request
+from flask import request, g
 from flask_restful import Resource, reqparse
 
+from common.common_log import operation_log
 from common.common_login_helper import login_required
 from common.common_model_enum import modelEnum
 from common.common_request_process import req
@@ -41,6 +42,7 @@ class BranchItem(Resource):
 class Branchlist(Resource):
     @api_version
     @login_required
+    # @operation_log
     def get(self, version, user_id=None):
         xml = request.args.get('format')
         try:
@@ -50,12 +52,17 @@ class Branchlist(Resource):
                 if isinstance(request_data, bool):
                     request_data = response_code.REQUEST_PARAM_FORMAT_ERROR
                     return response_result_process(request_data, xml=xml)
+
                 if not request_data:
+
+                    # print(g.user_key)
+                    userinfo=user_singleton.get_user_info_by_id(g.user_key)
+                    log_str="Apply Account:==>"+userinfo['data']['user_name']
+                    lg.log(log_str)
+                    # print(userinfo['data'])
                     res = get_branch_all()
                     data = response_code.SUCCESS
                     data['data'] = res
-
-
 
                     # data = user_singleton.get_users_info()
                     # data = UserSingleton.get_all_users(self)

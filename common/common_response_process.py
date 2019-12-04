@@ -22,15 +22,13 @@ def response_json(data):
     :param data: json数据
     :return:
     """
-    tt001=json.dumps(data, cls=MsSqlResultDataEncoder,ensure_ascii=False)
-
-    data_str=json.loads(tt001)
-    ret=jsonify(data_str)
+    msg_str=json.dumps(data, cls=MsSqlResultDataEncoder,ensure_ascii=False)
+    json_str=json.loads(msg_str)
+    return  jsonify(json_str)
 
 
     # return  json.dumps(data, cls=MsSqlResultDataEncoder)
-    return  ret
-        # json.dumps(data, cls=MsSqlResultDataEncoder)
+    # json.dumps(data, cls=MsSqlResultDataEncoder)
 
 def response_xml(data,root=None):
     """

@@ -39,7 +39,7 @@ def result_by_query(sql):
     cursor.execute(sql)
     res=cursor.fetchall()
     conn.close()
-    print(res)
+    # print(res)
     return res
 
 

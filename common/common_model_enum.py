@@ -25,3 +25,5 @@ class modelEnum(Enum):
     login = {'root': 'logins', 'body': 'login'}
     permission = {'root': 'permissions', 'body': 'permission'}
     role_permission = {'root': 'role_permissions', 'body': 'role_permission'}
+
+

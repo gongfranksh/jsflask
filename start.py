@@ -14,7 +14,11 @@ import os
 from api import create_app
 from config import configuration
 
+from tools.exts import logger
+
+
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
+# logger.init_app(app)
 
 if __name__ == '__main__':
     host, port, debug = configuration.get_start_config()
