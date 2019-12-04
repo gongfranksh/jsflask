@@ -1,14 +1,14 @@
-#!/usr/bin/python
-# -*- coding: UTF-8 -*
-"""
-@author：li-boss
-@file_name: log_helper.py
-@create date: 2019-10-27 14:19 
-@blog https://leezhonglin.github.io
-@csdn https://blog.csdn.net/qq_33196814
-@file_description：调试代码日志打印
-"""
-
+# #!/usr/bin/python
+# # -*- coding: UTF-8 -*
+# """
+# @author：li-boss
+# @file_name: log_helper.py
+# @create date: 2019-10-27 14:19
+# @blog https://leezhonglin.github.io
+# @csdn https://blog.csdn.net/qq_33196814
+# @file_description：调试代码日志打印
+# """
+#
 import logging
 import os
 from logging.handlers import RotatingFileHandler
@@ -21,13 +21,19 @@ LOG_FILE_MAX_BYTES = 100 * 1024 * 1024
 LOG_FILE_BACKUP_COUNT = 10
 
 # 1.创建1个logger：
-lg = logging.getLogger("Error")
-lginfo = logging.getLogger("Info")
+# lg = logging.getLogger("Error")
+lg = logging.getLogger()
+lg.setLevel(logging.INFO)
+
+# lginfo = logging.getLogger()
+# lginfo.setLevel(logging.INFO)
+# lginfo = logging.getLogger("Info")
 
 
-def init_log(app):
+# def init_log(app):
+def init_log():
     # log_path = os.getcwd() + "/var/log"
-    app.logger.removeHandler(default_handler)
+    # app.logger.removeHandler(default_handler)
     log_path = os.getcwd()
     try:
         if not os.path.exists(log_path):
@@ -66,17 +72,25 @@ def init_log(app):
         sh.setLevel(logging.INFO)
 
 
-        # 4.绑定关系：①logger绑定handler
+        # lg.addHandler(fh)
+        # lg.addHandler(sh)
 
-        for logger in (
-                # 这里自己还可以添加更多的日志模块，具体请参阅Flask官方文档
-                app.logger,
-                logging.getLogger('sqlalchemy'),
-                logging.getLogger('werkzeug'),
-                logging.getLogger("Error"),
-                logging.getLogger("INFO")
 
-        ):
-            logger.addHandler(fh)
-            logger.addHandler(sh)
+        #4.绑定关系：①logger绑定handler
+
+        # for logger in (
+        #         # 这里自己还可以添加更多的日志模块，具体请参阅Flask官方文档
+        #         app.logger,
+        #         logging.getLogger('sqlalchemy'),
+        #         logging.getLogger('werkzeug'),
+        #         logging.getLogger("Error")
+        #         # logging.getLogger("INFO")
+        #         # logging.getLogger("INFO")
+        #
+        # ):
+            # lginfo.addHandler(fh)
+        lg.addHandler(fh)
+        lg.addHandler(sh)
+        # logger.addHandler(fh)
+        # logger.addHandler(sh)
 

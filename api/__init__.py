@@ -31,6 +31,7 @@ def create_app(config_name):
 
 
     ###初始化日志###
-    init_log(app)
+    # init_log(app)
+    init_log()
     api.init_app(app)
     return app
