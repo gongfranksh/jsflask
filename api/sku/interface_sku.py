@@ -17,7 +17,7 @@ from common.common_request_process import req
 from common.common_response_process import response_result_process
 from core.user_singleton import user_singleton
 from jsdb.jsbranch import get_branch_all
-from jsdb.jssku import get_sku_all
+from jsdb.jssku import get_sku_all, get_sku_list
 
 from utils.api_version_verify import api_version
 from utils.log_helper import lg
@@ -52,7 +52,7 @@ class SkuList(Resource):
 
                     current_page, page_size = int(request_data.get('current_page')), int(request_data.get('page_size'))
                     search_data = request_data.get('search_data') if request_data.get('search_data') else {}
-                    data = user_singleton.get_users_info(current_page, page_size, search_data)
+                    data = get_sku_list(current_page, page_size, search_data)
             else:
                 data = user_singleton.get_user_info_by_id(user_id)
 
