@@ -10,7 +10,7 @@ def get_sku_all():
                     ( SELECT row_number () OVER ( ORDER BY proid ) AS row_num,* FROM product ) a 
                 WHERE
                     a.row_num BETWEEN 1 
-                    AND 100
+                    AND 50
     """
     res=result_by_query(sql)
     return res
