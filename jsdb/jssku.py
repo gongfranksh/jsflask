@@ -27,7 +27,7 @@ def get_sku_list(current_page, page_size, search_data=None):
                     AND {1}
     """
     start_num = (current_page - 1) * page_size
-    end_num =start_num+page_size
+    end_num =start_num+page_size-1
 
     sql=sql.format(start_num,end_num)
     res=result_by_query(sql)
