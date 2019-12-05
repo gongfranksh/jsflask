@@ -20,7 +20,7 @@ from werkzeug.security import check_password_hash
 import api
 from db.user.db_user_mgr import user_mgr
 from utils.status_code import response_code
-
+from utils.log_helper import lg
 
 class Auth(object):
     """
@@ -130,6 +130,8 @@ class Auth(object):
                         abort(401, '找不到该用户信息')
                     else:
                         if True:
+                            log_str = "Call By:" + userInfo['USER_NAME']
+                            lg.info(log_str)
                             return payload['data']['user_key']
                         else:
                             abort(401, 'Token已更改，请重新登录获取')

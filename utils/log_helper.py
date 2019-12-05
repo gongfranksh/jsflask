@@ -56,8 +56,10 @@ def init_log():
 
         sh = logging.StreamHandler()
         # 3.创建formatter：
+        # formatter = logging.Formatter(
+        #     fmt='%(asctime)s - %(levelname)s - Model:%(filename)s - Fun:%(funcName)s - Message:%(message)s - Line:%(lineno)d')
         formatter = logging.Formatter(
-            fmt='%(asctime)s - %(levelname)s - Model:%(filename)s - Fun:%(funcName)s - Message:%(message)s - Line:%(lineno)d')
+            fmt='%(asctime)s - %(levelname)s - Model:%(filename)s - Fun:%(funcName)s - Message:%(message)s')
 
         # # ②为handler绑定formatter
         fh.setFormatter(formatter)
@@ -67,8 +69,8 @@ def init_log():
         # lg.setLevel(40)
         # fh.setLevel(40)
         # # sh.setLevel(40)
-        fh.setLevel(logging.INFO)
         # lg.setLevel(logging.INFO)
+        fh.setLevel(logging.INFO)
         sh.setLevel(logging.INFO)
 
 

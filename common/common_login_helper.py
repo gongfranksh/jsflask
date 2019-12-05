@@ -22,6 +22,8 @@ def login_required(func):
         user_key = Auth.identify(request)
         if user_key > 0:
             g.user_key = user_key
+
+
             ###token验证，服务于restful
             return func(*args, **kwargs)
         else:
