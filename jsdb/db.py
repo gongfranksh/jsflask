@@ -7,9 +7,9 @@ import threading
 
 from DBUtils.PooledDB import PooledDB, SharedDBConnection
 
+from common.common_response_code import response_code
 from tools.config import js_host, js_user, js_pwd, js_db
-
-
+from utils.log_helper import lg
 
 POOL = PooledDB(
     creator=pymssql,  # 使用链接数据库的模块
@@ -34,13 +34,23 @@ POOL = PooledDB(
 
 
 def result_by_query(sql):
-    conn=POOL.connection()
-    cursor=conn.cursor(as_dict=True)
-    cursor.execute(sql)
-    res=cursor.fetchall()
-    conn.close()
+    try:
+        conn=POOL.connection()
+        cursor=conn.cursor(as_dict=True)
+        cursor.execute(sql)
+        res=cursor.fetchall()
+        return res
+
+    except Exception as e:
+
+        lg.error(e)
+        return response_code.GET_DATA_FAIL
+    finally:
+        conn.close()
+
     # print(res)
-    return res
+
+
 
 
 # pp=result_by_query("select CONVERT(nvarchar(20),braname) braname from branch")
