@@ -17,7 +17,7 @@ from common.common_request_process import req
 from common.common_response_process import response_result_process
 from core.user_singleton import user_singleton
 from jsdb.jsbranch import get_branch_all
-from jsdb.jssku import get_sku_all, get_sku_list
+from jsdb.jssku import get_sku_all, get_sku_list, get_sku_by_proid
 
 from utils.api_version_verify import api_version
 from utils.log_helper import lg
@@ -56,12 +56,41 @@ class SkuList(Resource):
                 exact_data= bool(request_data.get('exact'))
 
                 res = get_sku_list(current_page, page_size, search_data,exact_data)
-                data = response_code.SUCCESS
-            data['data'] = res
 
+                if isinstance(res,dict):
+                    data=res
 
-            # else:
-            #     data = user_singleton.get_user_info_by_id(user_id)
+                if isinstance(res, list):
+                    data = response_code.SUCCESS
+                    data['data'] = res
+
+            return response_result_process(data, xml_structure_str=body, xml=xml)
+        except Exception as e:
+            lg.error(e)
+            error_data = response_code.GET_DATA_FAIL
+            return response_result_process(error_data, xml=xml)
+
+class SkuItem(Resource):
+    @api_version
+    @login_required
+    def get(self, version, proid):
+        xml = request.args.get('format')
+        try:
+            body = modelEnum.user.value.get('body')
+        # if user_id is None:
+            request_data = req.request_process(request, xml, modelEnum.user.value)
+            if isinstance(request_data, bool):
+                request_data = response_code.REQUEST_PARAM_FORMAT_ERROR
+                return response_result_process(request_data, xml=xml)
+            if not request_data:
+                res = get_sku_by_proid(proid)
+
+                if isinstance(res,dict):
+                    data=res
+
+                if isinstance(res, list):
+                    data = response_code.SUCCESS
+                    data['data'] = res
 
             return response_result_process(data, xml_structure_str=body, xml=xml)
         except Exception as e:
