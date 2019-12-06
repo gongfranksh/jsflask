@@ -32,7 +32,7 @@ def get_sku_list(current_page, page_size, search_data=None,exact=True):
     """
 
     sql=sql.format(start_num,end_num,condition)
-    print(sql)
+    # print(sql)
     res=result_by_query(sql)
     return res
 
