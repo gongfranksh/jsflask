@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*
 """
-@author：li-boss
+@author：mfjpos
 @file_name: resource.py
 @create date: 2019-10-27 13:28 
 @blog https://leezhonglin.github.io
@@ -30,101 +30,101 @@ api = Api()
 # 部门管理
 api.add_resource(
     interfaceDepartment,
-    '/li-boss/<version>/department',
-    '/li-boss/<version>/department/<int:dpt_id>'
+    '/mfjpos/<version>/department',
+    '/mfjpos/<version>/department/<int:dpt_id>'
 )
 
 
 api.add_resource(
     interfaceDepartmentStaff,
-    '/li-boss/<version>/department/staff/<int:dpt_id>'
+    '/mfjpos/<version>/department/staff/<int:dpt_id>'
 )
 
 # 用户
 api.add_resource(
     interfaceUser,
-    '/li-boss/<version>/user',
-    '/li-boss/<version>/user/<int:user_id>',
+    '/mfjpos/<version>/user',
+    '/mfjpos/<version>/user/<int:user_id>',
 
 )
 
 # 密码
 api.add_resource(
     interfacePassword,
-    '/li-boss/<version>/user/<int:user_id>/password'
+    '/mfjpos/<version>/user/<int:user_id>/password'
 )
 
 # 基本信息修改
 api.add_resource(
     interfaceUserBasic,
-    '/li-boss/<version>/user/<int:user_id>/base/info'
+    '/mfjpos/<version>/user/<int:user_id>/base/info'
 )
 
 # 角色
 api.add_resource(
     interfaceRole,
-    '/li-boss/<version>/role',
-    '/li-boss/<version>/role/<int:role_id>'
+    '/mfjpos/<version>/role',
+    '/mfjpos/<version>/role/<int:role_id>'
 )
 #  角色权限
 api.add_resource(
     interfaceRolePermission,
-    '/li-boss/<version>/role/<role_id>/permission'
+    '/mfjpos/<version>/role/<role_id>/permission'
 )
 # 权限
 api.add_resource(
     interfacePermission,
-     '/li-boss/<version>/permission'
+     '/mfjpos/<version>/permission'
 )
 
 # 用户组
 api.add_resource(
     interfaceUserGroup,
-    '/li-boss/<version>/user/group',
-    '/li-boss/<version>/user/group/<int:group_id>'
+    '/mfjpos/<version>/user/group',
+    '/mfjpos/<version>/user/group/<int:group_id>'
 )
 
 
 api.add_resource(
     interfaceUserGroupStaff,
-    '/li-boss/<version>/user/group/<int:group_id>/staff'
+    '/mfjpos/<version>/user/group/<int:group_id>/staff'
 )
 
 # 获取用户组的角色信息
 api.add_resource(
     interfaceUserGroupRole,
-    '/li-boss/<version>/user/group/<int:group_id>/role'
+    '/mfjpos/<version>/user/group/<int:group_id>/role'
 )
 
 api.add_resource(
     interfaceLogin,
-    '/li-boss/<version>/login'
+    '/mfjpos/<version>/login'
 )
 
 
 # 获取门店清单
 api.add_resource(
     Branchlist,
-    '/li-boss/<version>/branch'
+    '/mfjpos/<version>/branch'
 )
 
 
 # 获取商品资料
 api.add_resource(
     SkuList,
-    '/li-boss/<version>/skulist'
+    '/mfjpos/<version>/skulist'
 )
 
 
 # 获取商品资料
 api.add_resource(
     SkuItem,
-    '/li-boss/<version>/skuitem/<proid>'
+    '/mfjpos/<version>/skuitem/<proid>'
 )
 
 
 # 获取门店商品资料
 api.add_resource(
     BranchSkuList,
-    '/li-boss/<version>/branchskulist'
+    '/mfjpos/<version>/branchskulist'
 )
