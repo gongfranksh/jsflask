@@ -31,37 +31,37 @@ class SkuList(Resource):
         xml = request.args.get('format')
         try:
             body = modelEnum.user.value.get('body')
-            if user_id is None:
-                request_data = req.request_process(request, xml, modelEnum.user.value)
-                if isinstance(request_data, bool):
-                    request_data = response_code.REQUEST_PARAM_FORMAT_ERROR
-                    return response_result_process(request_data, xml=xml)
-                if not request_data:
-                    res = get_sku_all()
-                    data = response_code.SUCCESS
-                    data['data'] = res
-                else:
-                    fields = ['current_page', 'page_size']
-                    must = req.verify_all_param_must(request_data, fields)
-                    if must:
-                        return response_result_process(must, xml=xml)
-                    par_type = {'page_size': int, 'current_page': int, 'search_data': dict,'exact':bool}
-                    param_type = req.verify_all_param_type(request_data, par_type)
-                    if param_type:
-                        return response_result_process(param_type, xml=xml)
-
-                    current_page, page_size = int(request_data.get('current_page')), int(request_data.get('page_size'))
-                    search_data = request_data.get('search_data') if request_data.get('search_data') else {}
-
-                    exact_data= bool(request_data.get('exact'))
-
-                    res = get_sku_list(current_page, page_size, search_data,exact_data)
-                    data = response_code.SUCCESS
-                    data['data'] = res
-
-
+        # if user_id is None:
+            request_data = req.request_process(request, xml, modelEnum.user.value)
+            if isinstance(request_data, bool):
+                request_data = response_code.REQUEST_PARAM_FORMAT_ERROR
+                return response_result_process(request_data, xml=xml)
+            if not request_data:
+                res = get_sku_all()
+                data = response_code.SUCCESS
+                data['data'] = res
             else:
-                data = user_singleton.get_user_info_by_id(user_id)
+                fields = ['current_page', 'page_size']
+                must = req.verify_all_param_must(request_data, fields)
+                if must:
+                    return response_result_process(must, xml=xml)
+                par_type = {'page_size': int, 'current_page': int, 'search_data': dict,'exact':bool}
+                param_type = req.verify_all_param_type(request_data, par_type)
+                if param_type:
+                    return response_result_process(param_type, xml=xml)
+
+                current_page, page_size = int(request_data.get('current_page')), int(request_data.get('page_size'))
+                search_data = request_data.get('search_data') if request_data.get('search_data') else {}
+
+                exact_data= bool(request_data.get('exact'))
+
+                res = get_sku_list(current_page, page_size, search_data,exact_data)
+                data = response_code.SUCCESS
+            data['data'] = res
+
+
+            # else:
+            #     data = user_singleton.get_user_info_by_id(user_id)
 
             return response_result_process(data, xml_structure_str=body, xml=xml)
         except Exception as e:
