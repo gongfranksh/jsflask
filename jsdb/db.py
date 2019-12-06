@@ -33,25 +33,72 @@ POOL = PooledDB(
 )
 
 
+# def result_by_query(sql):
+#         conn=POOL.connection()
+#         cursor=conn.cursor(as_dict=True)
+#         cursor.execute(sql)
+#         res=cursor.fetchall()
+#         conn.close()
+#         return res
+
+
 def result_by_query(sql):
     try:
         conn=POOL.connection()
         cursor=conn.cursor(as_dict=True)
         cursor.execute(sql)
         res=cursor.fetchall()
+        conn.close()
         return res
-
     except Exception as e:
-
         lg.error(e)
         return response_code.GET_DATA_FAIL
-    finally:
-        conn.close()
-
-    # print(res)
 
 
+def get_search_data_sql(search_data=None,exact=True):
+    try:
+        condition_str = ''
+        if search_data is None:
+            return  ''
+        else:
+            search_condition = search_data
+            i = 0
+            if search_condition:
+                for key in search_condition.keys():
 
+                    if exact:
+
+                        if i==0:
+                            condition = """
+                                    {0} = '{1}'
+                              """
+                        else:
+                            condition = """
+                                   and {0} = '{1}'
+                                  """
+                    else:
+                        if i==0:
+                            condition = """
+                                    {0} like '%{1}%'
+                              """
+                        else:
+                            condition = """
+                                   and {0} like '%{1}%'
+                                  """
+
+                    condition = condition.format(key, search_condition[key])
+                    condition_str = condition_str + condition
+                    i=i+1
+            return ' where ' + condition_str
+    except Exception as e:
+        lg.error(e)
+        return response_code.GET_DATA_FAIL
+
+
+
+
+# def str_cr_lf(sql):
+#     return sql.replace("\n","").replace("\r","")
 
 # pp=result_by_query("select CONVERT(nvarchar(20),braname) braname from branch")
 # print("中文")

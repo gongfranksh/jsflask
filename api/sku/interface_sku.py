@@ -45,14 +45,17 @@ class SkuList(Resource):
                     must = req.verify_all_param_must(request_data, fields)
                     if must:
                         return response_result_process(must, xml=xml)
-                    par_type = {'page_size': int, 'current_page': int, 'search_data': dict}
+                    par_type = {'page_size': int, 'current_page': int, 'search_data': dict,'exact':bool}
                     param_type = req.verify_all_param_type(request_data, par_type)
                     if param_type:
                         return response_result_process(param_type, xml=xml)
 
                     current_page, page_size = int(request_data.get('current_page')), int(request_data.get('page_size'))
                     search_data = request_data.get('search_data') if request_data.get('search_data') else {}
-                    data = get_sku_list(current_page, page_size, search_data)
+
+                    exact_data= bool(request_data.get('exact'))
+
+                    data = get_sku_list(current_page, page_size, search_data,exact_data)
             else:
                 data = user_singleton.get_user_info_by_id(user_id)
 
