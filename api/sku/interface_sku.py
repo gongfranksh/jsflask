@@ -55,7 +55,11 @@ class SkuList(Resource):
 
                     exact_data= bool(request_data.get('exact'))
 
-                    data = get_sku_list(current_page, page_size, search_data,exact_data)
+                    res = get_sku_list(current_page, page_size, search_data,exact_data)
+                    data = response_code.SUCCESS
+                    data['data'] = res
+
+
             else:
                 data = user_singleton.get_user_info_by_id(user_id)
 
