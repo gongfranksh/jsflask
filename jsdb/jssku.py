@@ -60,6 +60,40 @@ def get_sku_list(current_page, page_size, search_data=None,exact=True):
     return res
 
 
+def get_branch_sku_list(current_page, page_size, search_data=None,exact=True):
+    start_num = (current_page - 1) * page_size
+    end_num =start_num+page_size-1
+    condition = get_search_data_sql(search_data,exact)
+    sql="""
+                SELECT
+                    a.* 
+                FROM
+                    ( 
+                    
+                    SELECT
+                        row_number () OVER ( ORDER BY proid ) AS row_num,
+                        pcb.ClassName AS big_class_name,
+                        pc.ClassName,
+                        pd.BrandName,
+                        vbp.* 
+                    FROM
+                        v_branch_product vbp
+                        LEFT JOIN product_class pcb ON vbp.bigclass= pcb.ClassId
+                        LEFT JOIN product_class pc ON vbp.classid= pc.ClassId
+                        LEFT JOIN product_brand pd ON vbp.BrandId= pd.BrandId
+                        {2} 
+                        
+                      
+                    ) a 
+                WHERE
+                    a.row_num BETWEEN {0} 
+                    AND {1}  
+    """
+
+    sql=sql.format(start_num,end_num,condition)
+    # print(sql)
+    res=result_by_query(sql)
+    return res
 
 
 

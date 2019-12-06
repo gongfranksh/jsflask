@@ -14,7 +14,7 @@ from api.branch.interface_branch import Branchlist
 from api.department.interface_department import interfaceDepartment
 from api.department.interface_department_staff import interfaceDepartmentStaff
 from api.login.interface_login import interfaceLogin
-from api.sku.interface_sku import SkuList, SkuItem
+from api.sku.interface_sku import SkuList, SkuItem, BranchSkuList
 from api.role.interface_permission import interfacePermission
 from api.role.interface_role import interfaceRole
 from api.role.interface_role_permission import interfaceRolePermission
@@ -120,4 +120,11 @@ api.add_resource(
 api.add_resource(
     SkuItem,
     '/li-boss/<version>/skuitem/<proid>'
+)
+
+
+# 获取门店商品资料
+api.add_resource(
+    BranchSkuList,
+    '/li-boss/<version>/branchskulist'
 )
