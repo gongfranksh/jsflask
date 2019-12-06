@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*
 """
-@author：mfjpos
+@author：weiliang
 @file_name: resource.py
 @create date: 2019-10-27 13:28 
 @blog https://leezhonglin.github.io
