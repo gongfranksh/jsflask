@@ -8,8 +8,11 @@
 @csdn https://blog.csdn.net/qq_33196814
 @file_description：
 """
+
+from api.app_cache import cache
 from flask import request, g
 from flask_restful import Resource
+
 
 from common.common_login_helper import login_required
 from common.common_model_enum import modelEnum
@@ -24,7 +27,10 @@ from utils.log_helper import lg
 from utils.status_code import response_code
 
 
+
+
 class SkuList(Resource):
+
     @api_version
     @login_required
     def get(self, version, user_id=None):
@@ -71,6 +77,8 @@ class SkuList(Resource):
             return response_result_process(error_data, xml=xml)
 
 class SkuItem(Resource):
+    # @app.cache.cached(timeout=10)
+    @cache.cached(timeout=10)
     @api_version
     @login_required
     def get(self, version, proid):
@@ -99,10 +107,10 @@ class SkuItem(Resource):
             return response_result_process(error_data, xml=xml)
 
 
-
 class BranchSkuList(Resource):
     @api_version
     @login_required
+    @cache.cached(timeout=50)
     def get(self, version, user_id=None):
         xml = request.args.get('format')
         try:

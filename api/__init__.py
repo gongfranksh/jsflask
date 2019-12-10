@@ -10,13 +10,17 @@
 """
 from celery import Celery
 from flask import Flask
+from flask_caching import Cache
 from flask_cors import CORS
 
 
 from api.resource import api
+
+from api.app_cache import cache
 from utils.log_helper import init_log
 
-from config import config, Config
+from config import config, Config, cache_config
+
 
 import random
 from datetime import time
@@ -37,21 +41,24 @@ def create_app(config_name):
     # 返回数据中response为中文
     app.config['JSON_AS_ASCII'] = False
 
-    app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
-    app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379/0'
-    celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
-    celery.conf.update(app.config)
+    # app.config['CELERY_BROKER_URL'] = 'redis://127.0.0.1:6379/10'
+    # app.config['CELERY_RESULT_BACKEND'] = 'redis://127.0.0.1:6379/11'
+    # celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
+    # celery.conf.update(app.config)
 
+    # print("kkkk",app.name)
     # from api.celery.async import *
-
+    # appcache = Cache(app, config=cache_config)
     ###初始化日志###
     # init_log(app)
+
+    # cache=Cache(app,config=cache_config)
     init_log()
     api.init_app(app)
-
-
-
-
+    cache.init_app(app,config=cache_config)
     return app
+
+
+
 
 

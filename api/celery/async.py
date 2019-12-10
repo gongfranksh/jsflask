@@ -9,6 +9,9 @@ from flask import request, render_template, session, flash, redirect, url_for, j
 from start import app
 
 
+
+
+
 @celery.task
 def send_async_email(email_data):
     """Background task to send an email with Flask-Mail."""
@@ -22,6 +25,7 @@ def send_async_email(email_data):
 
 @celery.task(bind=True)
 def long_task(self):
+# def long_task():
     """Background task that runs a long function with progress reports."""
     verb = ['Starting up', 'Booting', 'Repairing', 'Loading', 'Checking']
     adjective = ['master', 'radiant', 'silent', 'harmonic', 'fast']

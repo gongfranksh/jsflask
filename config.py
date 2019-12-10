@@ -111,10 +111,10 @@ class Configuration():
         """
         return {
             'name': self.conf.get(database_section, 'name'),
-            'type':self.conf.get(database_section, 'type'),
-            'host':self.conf.get(database_section, 'host'),
-            'port':self.conf.get(database_section, 'port'),
-            'user':self.conf.get(database_section, 'user'),
+            'type': self.conf.get(database_section, 'type'),
+            'host': self.conf.get(database_section, 'host'),
+            'port': self.conf.get(database_section, 'port'),
+            'user': self.conf.get(database_section, 'user'),
             'pwd': self.conf.get(database_section, 'pwd')
         }
 
@@ -157,6 +157,7 @@ class DevelopmentConfig(Config):
     DB_CONFIG = {'host': '192.168.1.60', 'port': 3306, 'user': 'devuser', 'password': 'root', 'db': 'data',
                  'connect_timeout': 300, 'read_timeout': 300, 'write_timeout': 300,
                  'charset': 'utf8'}
+
     pass
 
 
@@ -182,3 +183,12 @@ config = {
     'production': ProductionConfig,
     'default': DevelopmentConfig
 }
+
+cache_config = {
+    'CACHE_TYPE': 'redis',
+    'CACHE_REDIS_HOST': '127.0.0.1',
+    'CACHE_REDIS_PORT': 6379,
+    'CACHE_REDIS_DB': 13
+
+}
+
