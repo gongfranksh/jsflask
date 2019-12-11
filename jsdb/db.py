@@ -10,7 +10,6 @@ from DBUtils.PooledDB import PooledDB, SharedDBConnection
 from common.common_response_code import response_code
 from tools.config import js_host, js_user, js_pwd, js_db
 from utils.log_helper import lg
-from api.app_cache import cache
 
 POOL = PooledDB(
     creator=pymssql,  # 使用链接数据库的模块
