@@ -18,6 +18,7 @@ from common.common_login_helper import login_required
 from common.common_model_enum import modelEnum
 from common.common_request_process import req
 from common.common_response_process import response_result_process
+from config import cache_time
 from core.user_singleton import user_singleton
 from jsdb.jsbranch import get_branch_all
 from jsdb.jssku import get_sku_all, get_sku_list, get_sku_by_proid, get_branch_sku_list
@@ -110,7 +111,7 @@ class SkuItem(Resource):
 class BranchSkuList(Resource):
     @api_version
     @login_required
-    @cache.cached(timeout=60)
+    @cache.cached(timeout=cache_time)
     def get(self, version, user_id=None):
         xml = request.args.get('format')
         try:

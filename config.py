@@ -192,3 +192,5 @@ cache_config = {
 
 }
 
+
+cache_time=60
