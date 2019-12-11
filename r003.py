@@ -39,17 +39,10 @@ ii=pipe.execute()
 #
 pp=ii[0]
 
-
-
 rest=dict_b_2_string(pp)
 
-
-
-# json_l=json.loads(rest)
 json_l=json.dumps(rest)
-
 json_t=json.loads(json_l)
-
 print(json_t)
 # pp=json.loads(ii[0])
 # pp=json.dumps(ii[0])

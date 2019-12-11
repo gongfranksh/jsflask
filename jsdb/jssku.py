@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from _md5 import md5
+
 from jsdb.db import result_by_query, get_search_data_sql
 from api.app_cache import cache
 
@@ -94,6 +96,7 @@ def get_branch_sku_list(current_page, page_size, search_data=None,exact=True):
     sql=sql.format(start_num,end_num,condition)
     # print(sql)
     res=result_by_query(sql)
+
     return res
 
 

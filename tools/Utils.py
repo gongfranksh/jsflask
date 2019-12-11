@@ -1,3 +1,4 @@
+import hashlib
 import json
 from decimal import Decimal
 import datetime
@@ -51,3 +52,8 @@ def dict_b_2_string(obj):
         itemvalue = str(value, encoding="utf-8")
         rt[itemkey] = itemvalue
     return rt
+
+
+def get_str_md5(str):
+    str_md5 = hashlib.md5(str.encode("utf8"))
+    return str_md5.hexdigest()

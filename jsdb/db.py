@@ -4,10 +4,12 @@ import sys
 import time
 import pymssql
 import threading
+from _md5 import md5
 
 from DBUtils.PooledDB import PooledDB, SharedDBConnection
 
 from common.common_response_code import response_code
+from tools.Utils import get_str_md5
 from tools.config import js_host, js_user, js_pwd, js_db
 from utils.log_helper import lg
 
@@ -45,12 +47,17 @@ POOL = PooledDB(
 # @cache.memoize(timeout=60)
 def result_by_query(sql):
     try:
+        rt={}
         conn=POOL.connection()
         cursor=conn.cursor(as_dict=True)
         cursor.execute(sql)
         res=cursor.fetchall()
         conn.close()
-        return res
+        print()
+        rt['sql']=sql
+        rt['sqlmd5']=get_str_md5(sql)
+        rt['result']=res
+        return rt
     except Exception as e:
         lg.error(e)
         return response_code.GET_DATA_FAIL
