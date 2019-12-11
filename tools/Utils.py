@@ -28,3 +28,17 @@ def return_json_result(rt_id, msg):
     else:
         rst['state']='error'
     return  rst
+
+def dict_2_redis(obj):
+    if isinstance(obj,dict):
+        for key,value in obj.items():
+            if value is None:
+                obj[key]=''
+
+            if isinstance(value, Decimal):
+                obj[key] = float(value)
+
+            if isinstance(value, datetime.datetime):
+                obj[key] = value.strftime('%Y-%m-%d %H:%M:%S')
+
+    return obj
