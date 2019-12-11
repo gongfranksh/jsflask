@@ -60,7 +60,7 @@ def get_sku_list(current_page, page_size, search_data=None,exact=True):
     res=result_by_query(sql)
     return res
 
-
+@cache.cached(timeout=60 * 3)
 def get_branch_sku_list(current_page, page_size, search_data=None,exact=True):
     start_num = (current_page - 1) * page_size
     end_num =start_num+page_size-1

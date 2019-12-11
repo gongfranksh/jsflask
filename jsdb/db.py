@@ -10,7 +10,7 @@ from DBUtils.PooledDB import PooledDB, SharedDBConnection
 from common.common_response_code import response_code
 from tools.config import js_host, js_user, js_pwd, js_db
 from utils.log_helper import lg
-from api.app_cache import cache
+from api.app_cache import cache, cache_key
 
 POOL = PooledDB(
     creator=pymssql,  # 使用链接数据库的模块
@@ -42,7 +42,8 @@ POOL = PooledDB(
 #         conn.close()
 #         return res
 
-@cache.cached(timeout=50)
+# @cache.cached(timeout=50)
+# @cache.memoize(timeout=60)
 def result_by_query(sql):
     try:
         conn=POOL.connection()

@@ -9,7 +9,7 @@
 @file_description：
 """
 
-from api.app_cache import cache
+from api.app_cache import cache, cache_key
 from flask import request, g
 from flask_restful import Resource
 
@@ -110,10 +110,11 @@ class SkuItem(Resource):
 class BranchSkuList(Resource):
     @api_version
     @login_required
-    @cache.cached(timeout=50)
+    @cache.cached(timeout=60)
     def get(self, version, user_id=None):
         xml = request.args.get('format')
         try:
+            lg.info("Call run BranchSkuList")
             body = modelEnum.user.value.get('body')
         # if user_id is None:
             request_data = req.request_process(request, xml, modelEnum.user.value)
