@@ -8,8 +8,8 @@
 @csdn https://blog.csdn.net/qq_33196814
 @file_description：
 """
-
-from api.app_cache import cache, cache_key
+from api import jsflaskcelery
+from api.app_cache import cache
 from flask import request, g
 from flask_restful import Resource
 
@@ -111,7 +111,9 @@ class SkuItem(Resource):
 class BranchSkuList(Resource):
     @api_version
     @login_required
+    # @cache.cached(timeout=cache_time,key_prefix='bsk')
     @cache.cached(timeout=cache_time)
+
     def get(self, version, user_id=None):
         xml = request.args.get('format')
         try:
@@ -142,7 +144,8 @@ class BranchSkuList(Resource):
 
                 exact_data= bool(request_data.get('exact'))
 
-                res = get_branch_sku_list(current_page, page_size, search_data,exact_data)
+                # res = get_branch_sku_list(current_page, page_size, search_data,exact_data)
+                res = get_branch_sku_list.delay(current_page, page_size, search_data,exact_data)
 
                 if isinstance(res,dict):
                     data=res
@@ -156,5 +159,65 @@ class BranchSkuList(Resource):
             lg.error(e)
             error_data = response_code.GET_DATA_FAIL
             return response_result_process(error_data, xml=xml)
+
+
+
+
+class BranchSkuList2(Resource):
+    @api_version
+    @login_required
+    # @cache.cached(timeout=cache_time,key_prefix='bsk')
+    @cache.cached(timeout=cache_time)
+
+    def get(self, version, user_id=None):
+            xml = request.args.get('format')
+        # try:
+            lg.info("Call run BranchSkuList")
+            body = modelEnum.user.value.get('body')
+        # if user_id is None:
+            request_data = req.request_process(request, xml, modelEnum.user.value)
+            if isinstance(request_data, bool):
+                request_data = response_code.REQUEST_PARAM_FORMAT_ERROR
+                return response_result_process(request_data, xml=xml)
+            # if not request_data:
+            #     # res = get_branch_sku_list()
+            #     # data = response_code.SUCCESS
+            #     # data['data'] = res
+            # else:
+            if  request_data:
+                fields = ['current_page', 'page_size']
+                must = req.verify_all_param_must(request_data, fields)
+                if must:
+                    return response_result_process(must, xml=xml)
+                par_type = {'page_size': int, 'current_page': int, 'search_data': dict,'exact':bool}
+                param_type = req.verify_all_param_type(request_data, par_type)
+                if param_type:
+                    return response_result_process(param_type, xml=xml)
+
+                current_page, page_size = int(request_data.get('current_page')), int(request_data.get('page_size'))
+                search_data = request_data.get('search_data') if request_data.get('search_data') else {}
+
+                exact_data= bool(request_data.get('exact'))
+
+                res = get_branch_sku_list.delay(current_page, page_size, search_data,exact_data)
+                # res = get_branch_sku_list(current_page, page_size, search_data,exact_data)
+
+
+                print(res )
+
+        #         if isinstance(res,dict):
+        #             data=res
+        #
+        #         if isinstance(res, list):
+        #             data = response_code.SUCCESS
+        #             data['data'] = res
+        #
+        #     return response_result_process(data, xml_structure_str=body, xml=xml)
+        # except Exception as e:
+        #     lg.error(e)
+        #     error_data = response_code.GET_DATA_FAIL
+        #     return response_result_process(error_data, xml=xml)
+
+
 
 

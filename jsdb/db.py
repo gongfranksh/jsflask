@@ -8,6 +8,7 @@ from _md5 import md5
 
 from DBUtils.PooledDB import PooledDB, SharedDBConnection
 
+from api import jsflaskcelery
 from common.common_response_code import response_code
 from tools.Utils import get_str_md5
 from tools.config import js_host, js_user, js_pwd, js_db
@@ -45,6 +46,7 @@ POOL = PooledDB(
 
 # @cache.cached(timeout=50)
 # @cache.memoize(timeout=60)
+# @jsflaskcelery.task
 def result_by_query(sql):
     try:
         rt={}
@@ -58,6 +60,7 @@ def result_by_query(sql):
         rt['sqlmd5']=get_str_md5(sql)
         rt['result']=res
         return rt
+        # return res
     except Exception as e:
         lg.error(e)
         return response_code.GET_DATA_FAIL

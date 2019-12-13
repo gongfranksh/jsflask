@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 from _md5 import md5
 
+import celery
+
+from api import jsflaskcelery
 from jsdb.db import result_by_query, get_search_data_sql
 from api.app_cache import cache
 
@@ -62,7 +65,8 @@ def get_sku_list(current_page, page_size, search_data=None,exact=True):
     res=result_by_query(sql)
     return res
 
-@cache.cached(timeout=60 * 3)
+# @cache.cached(timeout=60 * 3)
+@jsflaskcelery.task
 def get_branch_sku_list(current_page, page_size, search_data=None,exact=True):
     start_num = (current_page - 1) * page_size
     end_num =start_num+page_size-1
@@ -97,7 +101,7 @@ def get_branch_sku_list(current_page, page_size, search_data=None,exact=True):
     # print(sql)
     res=result_by_query(sql)
 
-    return res
+    return  res
 
 
 

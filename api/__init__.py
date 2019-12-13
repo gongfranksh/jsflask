@@ -13,7 +13,7 @@ from flask import Flask
 from flask_caching import Cache
 from flask_cors import CORS
 
-
+from api.app_celery import jsflaskcelery
 from api.resource import api
 
 from api.app_cache import cache
@@ -41,8 +41,12 @@ def create_app(config_name):
     # 返回数据中response为中文
     app.config['JSON_AS_ASCII'] = False
 
-    # app.config['CELERY_BROKER_URL'] = 'redis://127.0.0.1:6379/10'
-    # app.config['CELERY_RESULT_BACKEND'] = 'redis://127.0.0.1:6379/11'
+    app.config['CELERY_BROKER_URL'] = 'redis://127.0.0.1:6379/10'
+    app.config['CELERY_RESULT_BACKEND'] = 'redis://127.0.0.1:6379/11'
+
+    # jsflaskcelery=Celery(app.name, broker=app.config['CELERY_BROKER_URL'],backend=app.config['CELERY_RESULT_BACKEND'])
+    # app=Celery(app.name, broker=app.config['CELERY_BROKER_URL'],backend=app.config['CELERY_RESULT_BACKEND'])
+
     # celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
     # celery.conf.update(app.config)
 
